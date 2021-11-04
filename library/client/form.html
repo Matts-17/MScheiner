@@ -5,9 +5,10 @@
         <title>My Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <a href="data.html">Data</a>
+        <a href="http://localhost:5000/data.html">Data</a>
         <form id="myForm" action="data.html" method="POST">
             <label for="title">Book Title</label>
             <input id="title" name="title" type="text">
@@ -29,7 +30,7 @@
             <input id="isbn" name="isbn" type="text">
             <br>
 
-            <button type="submit">Submit</button>
+            <button type="submit" id="data-submit">Submit</button>
         </form>
         <script src="" async defer></script>
     </body>

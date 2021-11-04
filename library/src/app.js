@@ -17,8 +17,11 @@ var server;
 var port = 5000;
 
 //Page listeners (our router)
-
+var router = require("./router");
+router(app);
 //Service listeners (our data processors)
+var services = require("./services.js");
+services(app);
 
 //Listen
 server = app.listen(port, function(err) {
