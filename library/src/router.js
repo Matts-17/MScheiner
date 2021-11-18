@@ -6,11 +6,11 @@ var router = function(app) {
         res.status(200).sendFile(path.join(__dirname + "/../client/form.html"));
     });
 
-    app.get("/form.html", function(req, res) {
+    app.get("/form", function(req, res) {
         res.status(200).sendFile(path.join(__dirname + "/../client/form.html"));
     });
 
-    app.get("/data.html", function(req, res) {
+    app.get("/data", function(req, res) {
         res.status(200).sendFile(path.join(__dirname + "/../client/data.html"));
     });
 }

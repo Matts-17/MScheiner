@@ -7,7 +7,7 @@ $("#data-submit").click(function(){
         isbn: $("#isbn").val()
     }
     $.ajax({
-        url:"http://localhost:5000/form.html",
+        url:"http://localhost:5000/addData",
         type: "post",
         data: formData,
         success: function(response) {
@@ -16,11 +16,12 @@ $("#data-submit").click(function(){
             if(returnData.msg === "SUCCESS") {
                 alert("SUCCESS");
             }else {
-                console.log(response);
+                console.log(response.msg);
             }
         },
         error: function(response) {
             console.log(response);
         }
-    })
-}) 
+    });
+    return false;
+}); 
